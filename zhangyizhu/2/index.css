@@ -1,0 +1,14 @@
+#content {
+  width: 550px;
+  margin: 20px auto;
+  text-align: left;
+  text-indent: 2em;
+}
+
+#work-1 {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #AAA;
+  width: 700px;
+  padding: 20px;
+}
