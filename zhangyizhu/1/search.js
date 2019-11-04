@@ -10,7 +10,9 @@ function getNewList(){
 
 function jsonpRes(res) {
   console.log(res)
-  document.getElementById('output').innerText = res.g[0].q
+  if (res.g != undefined) {
+    document.getElementById('output').innerText = res.g[0].q
+  }
 }
 
 // function getNewList() {
