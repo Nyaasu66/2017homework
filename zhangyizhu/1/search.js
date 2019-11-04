@@ -25,6 +25,9 @@ function jsonpRes(res) {
       const div = document.createElement('div')
       div.innerText = item.q
       div.className = 'output'
+      div.onclick = function() {
+        location.href = 'https://www.baidu.com/s?wd='+item.q
+      }
       ctn.appendChild(div)
     })
   }
