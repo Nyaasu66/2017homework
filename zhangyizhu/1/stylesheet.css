@@ -188,8 +188,9 @@ input {
 }
 
 #bottom {
-  position: relative;
-  bottom: -387px;
+  position: fixed;
+  bottom: 2%;
+  left: 27%;
 }
 
 .qrtext {
@@ -229,11 +230,18 @@ input {
   top: 3px;
 }
 
-#output {
-  width: 629px;
-  height: 30px;
-  border: 1px solid #CCC;
+#output-container {
+  width: 640px;
   box-shadow: 2px 1px 5px #CCC;
+  border: 1px solid #CCC;
   font-size: 16px;
+}
+
+.output {
+  height: 30px;
   padding: 6px 0 0 10px;
+}
+
+.output:hover {
+  background-color: #EEE;
 }

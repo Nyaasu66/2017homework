@@ -1,3 +1,4 @@
+const ctn = document.getElementById('output-container')
 function getNewList(){
   var value = document.getElementsByTagName('input')[0].value
   var script = document.createElement('script');
@@ -8,10 +9,24 @@ function getNewList(){
   head.removeChild(head.lastChild);
 }
 
+if (!ctn.hasChildNodes()) {
+  ctn.style.boxShadow = 0
+  ctn.style.border = 0
+}
+
 function jsonpRes(res) {
+  while(ctn.hasChildNodes()) //当div下还存在子节点时 循环继续
+  {
+    ctn.removeChild(ctn.firstChild);
+  }
   console.log(res)
   if (res.g != undefined) {
-    document.getElementById('output').innerText = res.g[0].q
+    res.g.forEach(function(item){
+      const div = document.createElement('div')
+      div.innerText = item.q
+      div.className = 'output'
+      ctn.appendChild(div)
+    })
   }
 }
 
