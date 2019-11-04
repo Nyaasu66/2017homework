@@ -15,7 +15,7 @@ if (!ctn.hasChildNodes()) {
 }
 
 function jsonpRes(res) {
-  while(ctn.hasChildNodes()) //当div下还存在子节点时 循环继续
+  while(ctn.hasChildNodes()) //当container下还存在子节点时 循环继续
   {
     ctn.removeChild(ctn.firstChild);
   }
