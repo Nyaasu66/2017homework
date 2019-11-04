@@ -190,7 +190,8 @@ input {
 #bottom {
   position: fixed;
   bottom: 2%;
-  left: 27%;
+  left: 0;
+  right: 0;
 }
 
 .qrtext {
