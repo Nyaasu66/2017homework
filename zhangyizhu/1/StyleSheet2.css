@@ -174,7 +174,7 @@ input {
 .soutu-btn {
   position: absolute;
   right: 112px;
-  top: 29%;
+  top: 11px;
   height: 16px;
   width: 18px;
   background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
@@ -227,4 +227,13 @@ input {
   background-position: -623px -96px;
   position: relative;
   top: 3px;
+}
+
+#output {
+  width: 629px;
+  height: 30px;
+  border: 1px solid #CCC;
+  box-shadow: 2px 1px 5px #CCC;
+  font-size: 16px;
+  padding: 6px 0 0 10px;
 }
