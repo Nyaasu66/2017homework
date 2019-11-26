@@ -242,6 +242,12 @@ input {
 .output {
   height: 30px;
   padding: 6px 0 0 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .output:hover {
